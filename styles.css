@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #005baf; /* Azul do logo */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.ft {
+    color: #f5a623;
+}
+
+.financial {
+    color: rgba(159, 209, 255, 0.7);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 1rem; /* Espaço entre o logo e o título */
+}
+
+.logo-container img {
+    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f5a623; /* Laranja do logo ao passar o mouse */
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 91, 175, 0.7), rgba(0, 91, 175, 0.7)), url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background: #f5a623; /* Laranja do logo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffc14d; /* Laranja mais clara ao passar o mouse */
+}
+
+section {
+    padding: 4rem 0;
+}
+
+#about, #services {
+    background: #fff;
+}
+
+#about h2, #services h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    color: #005baf; /* Azul do logo */
+    letter-spacing: 1px;
+}
+
+#about h3 {
+    text-align: center;
+    color: #005baf; /* Azul do logo para manter a consistência */
+    margin-top: 2rem;
+}
+
+
+#about p, #services p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem; /* Adiciona margem abaixo do parágrafo */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto; /* Centraliza o parágrafo e adiciona margem inferior */
+}
+
+#services ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+#services ul li {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    color: #005baf; /* Azul do logo */
+    position: relative;
+}
+
+#services ul li::before {
+    content: '✔'; /* Símbolo de visto */
+    color: #f5a623; /* Laranja do logo */
+    font-weight: bold;
+    margin-right: 10px;
+    position: absolute;
+    left: -30px; /* Ajusta a posição do visto */
+}
+
+#services ul li:hover {
+    color: #f5a623;
+    transition: color 0.3s ease;
+}
+
+#services p {
+    margin-top: 50px;
+}
+
+footer {
+    background: #005baf;
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+footer a {
+    color: #f5a623;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc14d;
+}
+
+@media (max-width: 600px) {
+    #hero h2 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Reduz o tamanho da fonte do parágrafo */
+        margin-bottom: 1.5rem; /* Ajusta o espaço entre o texto e o botão */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+        padding: 0.8rem 1.5rem; /* Ajusta o tamanho do botão */
+    }
+}
+
+@media (max-width: 440px) {
+    nav ul {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        gap: 0.8rem; /* Ajusta o espaçamento entre os itens */
+    }
+
+    nav ul li {
+        display: block; /* Define os itens como blocos para ocuparem toda a linha */
+    }
+
+    nav ul li a {
+        font-size: 1.1rem; /* Ajuste no tamanho da fonte para telas menores */
+    }
+}
