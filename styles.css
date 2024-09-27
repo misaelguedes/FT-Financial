@@ -70,7 +70,7 @@ nav ul li a:hover {
 }
 
 #hero {
-    background: linear-gradient(rgba(0, 91, 175, 0.7), rgba(0, 91, 175, 0.7)), url('assets/contabilidade.jfif') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 91, 175, 0.7), rgba(0, 91, 175, 0.7)), url('assets/contabilidade.jpg') no-repeat center center/cover;
     color: #fff;
     height: 70vh;
     display: flex;
@@ -162,36 +162,80 @@ section {
     margin: 0 auto 2rem auto; /* Centraliza o parágrafo e adiciona margem inferior */
 }
 
-#services ul {
+/* Estilos para a seção de serviços */
+#services {
+    padding: 4rem 0;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* Estilo para a lista de serviços */
+.services-list {
+    flex: 1;
+}
+
+.services-list h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.services-list ul {
     list-style-type: none;
-    text-align: center;
     padding: 0;
 }
 
-#services ul li {
-    font-size: 1.4rem;
-    margin-bottom: 1.2rem;
-    color: #005baf; /* Azul do logo */
+.services-list ul li {
+    color: #005baf;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
-#services ul li::before {
-    content: '✔'; /* Símbolo de visto */
-    color: #f5a623; /* Laranja do logo */
-    font-weight: bold;
-    margin-right: 5px; /* Ajuste o espaço entre o ícone e o texto */
-    position: relative;
-    left: 0; /* Elimina o deslocamento para a esquerda */
-}
-
-#services ul li:hover {
+.services-list li:hover {
     color: #f5a623;
-    transition: color 0.3s ease;
 }
 
-#services p {
-    margin-top: 50px;
+.services-list ul li::before {
+    content: '✔'; /* Ícone de visto */
+    color: #f5a623;
+    margin-right: 8px;
+    position: absolute;
+    left: -20px; /* Ajuste para posicionar o ícone à esquerda do texto */
 }
+
+/* Estilo para a foto */
+.services-photo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.services-photo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-photo {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+}
+
 
 footer {
     background: #005baf;
