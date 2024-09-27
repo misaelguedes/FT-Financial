@@ -16,7 +16,8 @@ body {
 }
 
 header {
-    background: #005baf; /* Azul do logo */
+    background: linear-gradient(rgba(0, 91, 175, 0.7), rgba(0, 91, 175, 0.7)), url('assets/capa.jpg') no-repeat center center/cover;
+    text-align: center;
     color: #fff;
     padding: 1rem 0;
     border-bottom: solid 10px #f5a623;
@@ -170,8 +171,13 @@ section {
 .services-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Centraliza verticalmente os itens e a imagem */
     gap: 2rem;
+    margin-bottom: 50px;
+}
+
+#services p {
+    color: #005baf;
 }
 
 /* Estilo para a lista de serviços */
@@ -196,7 +202,7 @@ section {
     position: relative;
 }
 
-.services-list li:hover {
+.services-list ul li:hover {
     color: #f5a623;
 }
 
@@ -213,6 +219,7 @@ section {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: center; /* Certifica-se de que a imagem está centralizada verticalmente */
 }
 
 .services-photo img {
@@ -222,20 +229,6 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .services-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .services-photo {
-        margin-top: 2rem;
-        justify-content: center;
-    }
-}
-
 
 footer {
     background: #005baf;
@@ -253,6 +246,18 @@ footer a {
 
 footer a:hover {
     color: #ffc14d;
+}
+
+@media (max-width: 768px) {
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-photo {
+        margin-top: 2rem;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 600px) {
