@@ -69,7 +69,7 @@ nav ul li a:hover {
 }
 
 #hero {
-    background: linear-gradient(rgba(0, 91, 175, 0.7), rgba(0, 91, 175, 0.7)), url('hero-image.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 91, 175, 0.7), rgba(0, 91, 175, 0.7)), url('assets/contabilidade.jfif') no-repeat center center/cover;
     color: #fff;
     height: 70vh;
     display: flex;
@@ -104,6 +104,24 @@ nav ul li a:hover {
 
 section {
     padding: 4rem 0;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-photo img {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text h2 {
+    margin-top: 1.5rem;
 }
 
 #about, #services {
@@ -160,9 +178,9 @@ section {
     content: '✔'; /* Símbolo de visto */
     color: #f5a623; /* Laranja do logo */
     font-weight: bold;
-    margin-right: 10px;
-    position: absolute;
-    left: -30px; /* Ajusta a posição do visto */
+    margin-right: 5px; /* Ajuste o espaço entre o ícone e o texto */
+    position: relative;
+    left: 0; /* Elimina o deslocamento para a esquerda */
 }
 
 #services ul li:hover {
