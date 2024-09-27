@@ -19,6 +19,7 @@ header {
     background: #005baf; /* Azul do logo */
     color: #fff;
     padding: 1rem 0;
+    border-bottom: solid 10px #f5a623;
 }
 
 header h1 {
