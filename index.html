@@ -33,18 +33,36 @@
         </div>
     </section>
 
-    <section id="about">
-        <div class="container intro-content">
-            <div class="intro-photo">
-                <img src="assets/fellippe.jpeg" alt="Owner Photo">
-            </div>
+    <section id="photo">
+        <div class="intro-photo">
+            <img src="assets/fellippe.jpeg" alt="Owner Photo">
+        </div>
+    </section>
+
+    <section id="about"></section>
+        <div class="container">
             <h2>About Us</h2>
-            <p>FT FINANCIAL LLC is a finance, audit, and accounting consulting services firm specializing in providing financial planning, tax planning and compliance, financial analysis, business valuation, cash flow management and debt management advisory and accounting and bookkeeping (including tax filing and preparation) services. We are headquartered in North Carolina, with a dedicated team of professionals with extensive experience in the field.</p>
-            <p>Our mission is to help businesses in the United States, particularly small and medium-sized enterprises (SMEs), reach their financial goals by providing them with the guidance, expertise, and support they need to succeed.  We are committed to building long-term relationships with our clients and providing them with personalized service that is tailored to their individual needs.</p>
-            <p>We believe in the power of transparency and communication, and we are dedicated to keeping our clients informed every step of the way.  Our commitment to excellence is evident in the quality of our work, and we are always striving to improve our services and stay up-to-date on the latest industry best practices.</p>
-            <p>At FT FINANCIAL LLC, we are passionate about helping businesses succeed and we are confident that we have the experience, skills, and dedication to help our clients achieve their financial goals. Contact us today to learn more about our services and how we can help your business thrive.</p>
-            <h3>About Me</h3>
-            <p>Fellippe Camara Taborelli da Silva is an experienced accounting professional with over seven years of experience in the market. He holds a degree in Accounting Sciences from the Federal University of Mato Grosso, in Brazil, and possesses a strong understanding of accounting principles and practices. He is proficient in a variety of accounting software, including Thomson Reuters. Fellippe has a proven track record of success in managing and supervising accounting departments and has experience in providing tax and financial advisory services to small and medium-sized businesses. His passion for the profession has driven him to stay up-to-date and engaged in associations such as the Regional Accounting Council and NABA inc., and he has also received an award for his professional excellence.</p>
+
+            <!-- Abas principais -->
+            <div class="tabs">
+                <button class="tablinks active" onclick="openTab(event, 'about-ft')">About FT Financial</button>
+                <button class="tablinks" onclick="openTab(event, 'leadership')">Administration and Leadership</button>
+            </div>
+
+            <!-- Conteúdo da Aba "About FT Financial" -->
+            <div id="about-ft" class="tabcontent" style="display: block;">
+                <h3>About FT Financial</h3>
+                <p>FT FINANCIAL LLC is a finance, audit, and accounting consulting services firm specializing in providing financial planning, tax planning and compliance, financial analysis, business valuation, cash flow management and debt management advisory and accounting and bookkeeping (including tax filing and preparation) services. We are headquartered in North Carolina, with a dedicated team of professionals with extensive experience in the field.</p>
+                <p>Our mission is to help businesses in the United States, particularly small and medium-sized enterprises (SMEs), reach their financial goals by providing them with the guidance, expertise, and support they need to succeed.  We are committed to building long-term relationships with our clients and providing them with personalized service that is tailored to their individual needs.</p>
+                <p>We believe in the power of transparency and communication, and we are dedicated to keeping our clients informed every step of the way.  Our commitment to excellence is evident in the quality of our work, and we are always striving to improve our services and stay up-to-date on the latest industry best practices.</p>
+                <p>At FT FINANCIAL LLC, we are passionate about helping businesses succeed and we are confident that we have the experience, skills, and dedication to help our clients achieve their financial goals. Contact us today to learn more about our services and how we can help your business thrive.</p>
+            </div>
+
+            <!-- Conteúdo da Aba "Administration and Leadership" -->
+            <div id="leadership" class="tabcontent" style="display: none;">
+                <h3>Administration and Leadership</h3>
+                <p>Fellippe Camara Taborelli da Silva is an experienced accounting professional with over seven years of experience in the market. He holds a degree in Accounting Sciences from the Federal University of Mato Grosso, in Brazil, and possesses a strong understanding of accounting principles and practices. He is proficient in a variety of accounting software, including Thomson Reuters. Fellippe has a proven track record of success in managing and supervising accounting departments and has experience in providing tax and financial advisory services to small and medium-sized businesses. His passion for the profession has driven him to stay up-to-date and engaged in associations such as the Regional Accounting Council and NABA inc., and he has also received an award for his professional excellence.</p>
+            </div>
         </div>
     </section>
 
@@ -80,5 +98,7 @@
             <p>Phone: +1 (919) 746-3218</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
