@@ -142,17 +142,15 @@ nav ul li a:hover {
 
 .tabcontent p {
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 section {
     padding: 4rem 0;
 }
 
-#photo {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente (se houver altura definida) */
-    margin-bottom: -150px;
+.intro-photo {
+    text-align: center;
 }
 
 .intro-photo img {
