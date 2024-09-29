@@ -191,6 +191,7 @@ section {
 /* Estilo para a lista de serviços */
 .services-list {
     flex: 1;
+    text-align: center;
 }
 
 .services-list h2 {
@@ -214,12 +215,8 @@ section {
     color: #f5a623;
 }
 
-.services-list ul li::before {
-    content: '✔'; /* Ícone de visto */
+.services-list .item {
     color: #f5a623;
-    margin-right: 8px;
-    position: absolute;
-    left: -20px; /* Ajuste para posicionar o ícone à esquerda do texto */
 }
 
 /* Estilo para a foto */
