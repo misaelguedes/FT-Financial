@@ -104,60 +104,8 @@ nav ul li a:hover {
     background: #ffc14d; /* Laranja mais clara ao passar o mouse */
 }
 
-.tabs {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.tablinks {
-    background-color: #005baf;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.tablinks:hover {
-    background-color: #004a8d;
-}
-
-.tablinks.active {
-    background-color: #003d72;
-}
-
-.tabcontent {
-    display: none;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-}
-
-.tabcontent h3 {
-    margin-top: 0;
-}
-
-.tabcontent p {
-    margin-bottom: 1rem;
-    text-align: justify;
-}
-
 section {
     padding: 4rem 0;
-}
-
-.intro-photo {
-    text-align: center;
-}
-
-.intro-photo img {
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para a seção de serviços */
@@ -231,6 +179,63 @@ section {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    margin-top: -100px;
+}
+
+.intro-photo {
+    text-align: center;
+}
+
+.intro-photo img {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tablinks {
+    background-color: #005baf;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tablinks:hover {
+    background-color: #004a8d;
+}
+
+.tablinks.active {
+    background-color: #003d72;
+}
+
+.tabcontent {
+    display: none;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 100px;
+}
+
+.tabcontent h3 {
+    margin-top: 0;
+}
+
+.tabcontent p {
+    margin-bottom: 1rem;
+    text-align: justify;
 }
 
 footer {
