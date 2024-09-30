@@ -40,11 +40,11 @@ header h1 {
 
 .logo-container {
     text-align: center;
-    margin-bottom: 1rem; /* Espaço entre o logo e o título */
+    margin-bottom: 1rem;
 }
 
 .logo-container img {
-    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    max-width: 150px;
     height: auto;
 }
 
@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f5a623; /* Laranja do logo ao passar o mouse */
+    color: #f5a623;
 }
 
 #hero {
@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 .btn {
     padding: 1rem 2rem;
-    background: #f5a623; /* Laranja do logo */
+    background: #f5a623;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -101,14 +101,13 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #ffc14d; /* Laranja mais clara ao passar o mouse */
+    background: #ffc14d;
 }
 
 section {
     padding: 4rem 0;
 }
 
-/* Estilos para a seção de serviços */
 #services {
     padding: 4rem 0;
 }
@@ -116,7 +115,7 @@ section {
 .services-content {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centraliza verticalmente os itens e a imagem */
+    align-items: center;
     gap: 2rem;
     margin-bottom: 50px;
 }
@@ -125,7 +124,7 @@ section {
     text-align: center;
     margin-bottom: 2.5rem;
     font-size: 2.2rem;
-    color: #005baf; /* Azul do logo */
+    color: #005baf;
     letter-spacing: 1px;
 }
 
@@ -134,7 +133,6 @@ section {
     text-align: center;
 }
 
-/* Estilo para a lista de serviços */
 .services-list {
     flex: 1;
     text-align: center;
@@ -165,12 +163,11 @@ section {
     color: #f5a623;
 }
 
-/* Estilo para a foto */
 .services-photo {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    align-items: center; /* Certifica-se de que a imagem está centralizada verticalmente */
+    align-items: center;
 }
 
 .services-photo img {
@@ -270,31 +267,31 @@ footer a:hover {
 
 @media (max-width: 600px) {
     #hero h2 {
-        font-size: 2rem; /* Reduz o tamanho da fonte do título */
+        font-size: 2rem;
     }
 
     #hero p {
-        font-size: 1rem; /* Reduz o tamanho da fonte do parágrafo */
-        margin-bottom: 1.5rem; /* Ajusta o espaço entre o texto e o botão */
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .btn {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
-        padding: 0.8rem 1.5rem; /* Ajusta o tamanho do botão */
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
     }
 }
 
 @media (max-width: 440px) {
     nav ul {
-        flex-direction: column; /* Alinha os itens verticalmente */
-        gap: 0.8rem; /* Ajusta o espaçamento entre os itens */
+        flex-direction: column;
+        gap: 0.8rem;
     }
 
     nav ul li {
-        display: block; /* Define os itens como blocos para ocuparem toda a linha */
+        display: block;
     }
 
     nav ul li a {
-        font-size: 1.1rem; /* Ajuste no tamanho da fonte para telas menores */
+        font-size: 1.1rem;
     }
 }
